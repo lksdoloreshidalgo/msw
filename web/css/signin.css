@@ -1,0 +1,104 @@
+.slider{
+    padding-top: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+select{
+    -webkit-appearance: none;
+}
+body{
+    background: #357ebd;
+
+}
+.inicio{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+label{
+    font-family: inherit;
+     color: snow;
+     margin-top: 10px;
+}
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  background: #357ebd;
+   font-family: sans-serif;
+   color: snow;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.form-signin input[type="password"] {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.btn-in{
+    background: #31D7CB;
+    color: #F1F1F1;
+}
+
+.btn-in:hover{
+    background: #2ECABF;
+    color: #F1F1F1;
+}
+.select {
+  border: .5px solid #ccc;
+  width: 300px;
+  overflow: hidden;
+  background: #fff url("scale248.png") no-repeat 260px center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.select:hover {
+  border: .5px solid #ccc;
+  width: 300px;
+  overflow: hidden;
+  background: #fff url("down249.png") no-repeat 260px center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+  .select select {
+    padding: 5px 8px;
+    width: 150%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.username">victor</property>
+        <property name="hibernate.connection.password">alfa47casa$</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://192.168.0.53:5432/ad_msw</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        
+        <mapping class="modelo.general.InstruccionModelo" />
+        <mapping class="modelo.general.OrdenModelo" />
+        <mapping class="modelo.general.CatalogoModelo" />
+        <mapping class="modelo.general.SucursalModelo" />
+        <mapping class="modelo.general.DatosWSModelo" />
+        <mapping class="modelo.general.CuentahabienteModelo" />
+        <mapping class="modelo.general.CuentaModelo" />
+        <mapping class="modelo.general.PersonaModelo" />
+        <mapping class="modelo.general.TerceroTerceroModelo" />
+        <mapping class="modelo.general.DevolucionModelo" />
+        <mapping class="modelo.general.TipoCatalogoModelo" />
+        <mapping class="modelo.general.EntidadModeloNuevo" />
+        <mapping class="modelo.general.EstadoOrdenModelo" />
+        <mapping class="modelo.general.CatalogoSaldoModelo" />
+        <mapping class="modelo.general.IndiceModelo" />
+        <mapping class="modelo.general.DatosConexionBD" />
+        <mapping class="modelo.ws.entrada.OrdenWSModelo" />
+        <mapping class="modelo.log.ErrorLogModelo" />
+        <mapping class="modelo.log.TipoErrorLogModelo" />
+        <mapping class="modelo.log.NivelModelo" />
+        <mapping class="modelo.general.PeticionModelo" />
+        <mapping class="modelo.general.ModuloModelo" />
+        <mapping class="modelo.general.BitacoraPeticionModelo" />
+        <mapping class="modelo.general.ParametrosModelo" />
+        <mapping class="modelo.general.BitacoraEstadoOrdenModelo" />
+        <mapping class="modelo.general.CuentahabienteSucursalModelo" />
+        <mapping class="modelo.general.CuentahabienteSucursalModelo" />
+        <mapping class="modelo.general.BitacoraSaldoModelo" />
+        <mapping class="modelo.general.BitacoraSaldoInicialModelo" />
+        <mapping class="modelo.general.SaldoMontoModelo" />
+        <mapping class="modelo.general.ComisionModelo" />
+        <mapping class="modelo.general.TipoPeticionModelo" />
+        <mapping class="modelo.general.LibreriaModelo" />
+        <mapping class="modelo.general.OrdenEntidadModelo" />
+        <mapping class="modelo.general.BitacoraEstadoOrdenEntidadModelo" />
+        
+        <mapping class="modelo.seguridad.PantallaModelo" />
+        <mapping class="modelo.general.CatalogoRolModelo" />
+        <mapping class="modelo.general.UsuarioModelo" />
+        <mapping class="modelo.general.ClaveRastreoEnviadaModelo" />
+        <mapping class="modelo.general.ParticipanteTerceroModelo" />
+        <mapping class="modelo.general.NominaModelo" />
+        <mapping class="modelo.general.AdministraTelefonosModelo" />
+        <mapping class="modelo.general.CatalogoCLABEEntidadModelo" />
+        <mapping class="modelo.seguridad.AccesoUsuarioModelo" />
+        <mapping class="modelo.seguridad.SesionModelo" />
+        <mapping class="modelo.general.ClienteModelo"/>
+        <mapping class="modelo.general.CuentaClienteModelo"/>
+        <mapping class="modelo.general.CuentahabienteBeneficiarioModelo"/>
+        <mapping class="modelo.general.ClienteModelo"/>
+        <mapping class="modelo.general.CuentaClienteModelo"/>
+        <mapping class="modelo.general.CuentahabienteBeneficiarioModelo"/>
+        <mapping class="modelo.general.FormatoPagoModelo"/>
+        <mapping class="modelo.general.TipoFormatoModelo"/>
+        <mapping class="modelo.general.TipoIndiceModelo"/>
+
+        <mapping class="modelo.general.PagoModelo" />
+        <mapping class="modelo.general.BitacoraEstadoPagoModelo" />
+        <mapping class="modelo.general.ClaveCifradoWSModelo" />
+        <mapping class="modelo.general.CertificadosLocal" />
+        
+    </session-factory>
+</hibernate-configuration>

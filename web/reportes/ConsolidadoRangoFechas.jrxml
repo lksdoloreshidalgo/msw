@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="731dca75-4ce2-4ebb-8f37-f83ff12f6751">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<parameter name="urlLogoSPEI" class="java.lang.String"/>
+	<parameter name="logoReforma" class="java.lang.String"/>
+	<field name="montoEntrada" class="java.lang.String"/>
+	<field name="montoSalida" class="java.lang.String"/>
+	<field name="noSalida" class="java.lang.String"/>
+	<field name="noEntrada" class="java.lang.String"/>
+	<field name="numeroPagos" class="java.lang.String"/>
+	<field name="fechaInicio" class="java.lang.String"/>
+	<field name="fechaFin" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement x="141" y="11" width="273" height="46" uuid="07d67372-847e-4487-8c96-f9f353b7be84"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONSOLIDADO DE RANGO DE FECHA PAGOS POR SUCURSALES]]></text>
+			</staticText>
+			<image>
+				<reportElement x="414" y="0" width="139" height="57" uuid="286b777e-b6fe-4301-bde4-b08ccfa184ca"/>
+				<imageExpression><![CDATA[$P{logoReforma}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="141" height="57" uuid="9c78b5e9-99c2-4766-bc40-fc9e19fcabdf"/>
+				<imageExpression><![CDATA[$P{urlLogoSPEI}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="10" width="553" height="14" backcolor="#CCCCCC" uuid="9f87799c-c172-4e53-9a52-ab5198216edf"/>
+			</rectangle>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="fa481bc5-e212-42c1-a34e-ff2926bf3e44"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="316" y="10" width="79" height="14" uuid="1292a6de-ff59-4dcf-a549-e9be9710b724"/>
+				<box>
+					<pen lineWidth="1.25" lineStyle="Double"/>
+					<topPen lineWidth="1.25" lineStyle="Double"/>
+					<leftPen lineWidth="1.25" lineStyle="Double"/>
+					<bottomPen lineWidth="1.25" lineStyle="Double"/>
+					<rightPen lineWidth="1.25" lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[Numero Pagos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="395" y="10" width="79" height="14" uuid="c3702dce-77a7-4235-a5df-904626480d6a"/>
+				<box>
+					<pen lineWidth="1.25" lineStyle="Double"/>
+					<topPen lineWidth="1.25" lineStyle="Double"/>
+					<leftPen lineWidth="1.25" lineStyle="Double"/>
+					<bottomPen lineWidth="1.25" lineStyle="Double"/>
+					<rightPen lineWidth="1.25" lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[Fecha Inicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="10" width="79" height="14" uuid="45a5d9d3-954e-4403-90f1-09b0b90119f4"/>
+				<box>
+					<pen lineWidth="1.25" lineStyle="Double"/>
+					<topPen lineWidth="1.25" lineStyle="Double"/>
+					<leftPen lineWidth="1.25" lineStyle="Double"/>
+					<bottomPen lineWidth="1.25" lineStyle="Double"/>
+					<rightPen lineWidth="1.25" lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[Monto Salida]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="10" width="79" height="14" uuid="afc1dd60-b4ea-40a4-b100-b5048188d544"/>
+				<box>
+					<pen lineWidth="1.25" lineStyle="Double"/>
+					<topPen lineWidth="1.25" lineStyle="Double"/>
+					<leftPen lineWidth="1.25" lineStyle="Double"/>
+					<bottomPen lineWidth="1.25" lineStyle="Double"/>
+					<rightPen lineWidth="1.25" lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[No Salida]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="158" y="10" width="79" height="14" uuid="db23234f-8cef-4d3c-b019-28bffb67abbe"/>
+				<box>
+					<pen lineWidth="1.25" lineStyle="Double"/>
+					<topPen lineWidth="1.25" lineStyle="Double"/>
+					<leftPen lineWidth="1.25" lineStyle="Double"/>
+					<bottomPen lineWidth="1.25" lineStyle="Double"/>
+					<rightPen lineWidth="1.25" lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[No Entrada]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="10" width="79" height="14" uuid="82d34080-aa85-45b9-ab0f-3212a3402979"/>
+				<box>
+					<pen lineWidth="1.25" lineStyle="Double"/>
+					<topPen lineWidth="1.25" lineStyle="Double"/>
+					<leftPen lineWidth="1.25" lineStyle="Double"/>
+					<bottomPen lineWidth="1.25" lineStyle="Double"/>
+					<rightPen lineWidth="1.25" lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[Fecha Fin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="10" width="79" height="14" uuid="07ae76a2-6dab-4e85-b41a-98ae9712cbcd"/>
+				<box>
+					<pen lineWidth="1.25" lineStyle="Double"/>
+					<topPen lineWidth="1.25" lineStyle="Double"/>
+					<leftPen lineWidth="1.25" lineStyle="Double"/>
+					<bottomPen lineWidth="1.25" lineStyle="Double"/>
+					<rightPen lineWidth="1.25" lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[Monto Entrada]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="3b1d4853-a8d1-4f24-9833-8b3342c3a9b6"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="0" y="1" width="79" height="15" uuid="9ff51b73-e7f6-4a1b-9211-72e7b2bf7503"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{montoEntrada}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="1" width="79" height="15" uuid="2cfe777a-3f17-45f4-b899-3acd3dfc8ac3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{montoSalida}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="158" y="1" width="79" height="14" uuid="eb20ed3f-4156-48aa-a88f-34195c057998"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{noEntrada}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="0" width="79" height="15" uuid="4425d864-2ac6-46bd-bcb7-7548fa735f19"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{noSalida}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="0" width="79" height="15" uuid="cbf15efb-a9d6-4cc7-8fd9-f204f58b7039"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{numeroPagos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="2" width="57" height="14" uuid="f61c64e9-5d73-43f6-b924-154f527e8d4a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{fechaInicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="474" y="2" width="52" height="14" uuid="c6f21503-187c-45d1-b3c4-b2c7141909c9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{fechaFin}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="f41f26e0-0b27-4520-affc-81a91fde9ca1"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="b96ed00e-64cd-48bc-a623-cc1fcd74e95f"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="9c9f0e06-ea51-47e4-9eb7-5e1e07123ddd"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

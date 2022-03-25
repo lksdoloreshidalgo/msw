@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteCuentaClabe" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4aac9e7a-b026-4b6a-b610-8a165fa5424c">
+	<property name="ireport.zoom" value="1.3660269107301461"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="529"/>
+	<parameter name="p_nombre_entidad" class="java.lang.String"/>
+	<parameter name="p_nombre_cuentahabiente" class="java.lang.String"/>
+	<parameter name="p_rfc" class="java.lang.String"/>
+	<parameter name="p_numero_cliente" class="java.lang.String"/>
+	<parameter name="p_sucursal" class="java.lang.String"/>
+	<parameter name="p_cuenta_CLABE" class="java.lang.String"/>
+	<parameter name="p_tipo_cuenta" class="java.lang.String"/>
+	<parameter name="urlLogoSPEI" class="java.lang.String"/>
+	<parameter name="logoReforma" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="144" splitType="Stretch">
+			<image>
+				<reportElement x="405" y="37" width="137" height="98" uuid="7d1793b7-b75d-4f8e-bf0e-1e55c697de54"/>
+				<imageExpression><![CDATA[$P{logoReforma}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="150" y="37" width="255" height="98" uuid="832daeea-6697-42ea-956b-aa9593318196"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_nombre_entidad}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="13" y="37" width="137" height="98" uuid="ecc15aa9-19f9-470f-8d6d-2d248b603515"/>
+				<imageExpression><![CDATA[$P{urlLogoSPEI}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="614" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="36" y="30" width="256" height="80" uuid="74993806-d367-4bb9-a92f-ece306fafeaf"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="42" y="30" width="72" height="20" uuid="a15c410c-37e6-42d6-9b6c-60a6aef97463"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="50" width="72" height="20" uuid="67b8e8cf-a9e3-4ef3-ad96-1d996e80ed19"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RFC:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="70" width="72" height="20" uuid="812eed32-f68f-49d8-8420-b058257eaa9b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Número Cliente:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="90" width="72" height="20" uuid="3f4faa49-af7e-47e1-b673-ae3bf89b08e5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sucursal:]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement x="305" y="30" width="212" height="80" uuid="e7a12abe-713b-4c8d-a3f2-b2b5bb250daf"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="308" y="30" width="68" height="20" uuid="8a485f11-fe08-4323-960c-8011e017ced0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cuenta CLABE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="50" width="68" height="20" uuid="bab580a8-529a-4fc0-97b1-785f9247cd71"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo Cuenta:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="34" y="148" width="481" height="23" uuid="2334e48d-f0e8-4a22-bacf-9c865391c8d6"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="121" y="148" width="309" height="23" uuid="0fa252b3-505e-4d3f-80e8-71289ddfbcd0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Preguntas Frecuentes.]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement x="34" y="203" width="227" height="60" uuid="fba4aeda-8db0-4002-a53b-68c7dd8ec29c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="96" y="203" width="100" height="15" uuid="e626455c-d99b-428f-b6ff-f54cad63efb5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[¿Que es SPEI?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="218" width="203" height="45" uuid="998ca4a0-5e2a-4985-844d-6e28fae0ed25"/>
+				<textElement>
+					<font size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[El SPEI® es un sistema de pagos que fue desarrollado por el Banco de México, el banco central de la Nación, y la banca comercial, para permitir a los clientes de los bancos enviar y recibir transferencias electrónicas de dinero en cuestión de segundos.
+
+Las transferencias SPEI® son rápidas, seguras, cómodas y convenientes.]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement x="288" y="203" width="227" height="60" uuid="e15ad500-cb92-4a08-a5f0-407ab18f7519"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="303" y="203" width="199" height="28" uuid="abfc4c25-0f07-4405-beb4-2f5e20632450"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[¿Cómo puedo saber si ya pasó mi transferencia SPEI®?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="299" y="231" width="203" height="32" uuid="a8e3e494-b9e6-47a4-85a3-e81bd454096d"/>
+				<textElement>
+					<font size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Las personas que han enviado o esperan recibir dinero por el SPEI® pueden obtener información sobre el estado de sus órdenes de pago en la siguiente página: https://www.banxico.org.mx/mispei/]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement x="34" y="273" width="227" height="97" uuid="b802e5df-3dd2-42f4-9c95-fdf582de6d68"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="45" y="273" width="203" height="29" uuid="bb022d50-6908-46c1-8968-1b23b01793bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pagos a empresas, comercios y prestadores de servicios a través del SPEI®]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="302" width="203" height="56" uuid="fb5a309e-de77-4ba8-9245-2ca4e6420cc8"/>
+				<textElement>
+					<font size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[En la actualidad existen muchas empresas, comercios y prestadores de servicios que aceptan pagos por transferencia electrónica (escuelas, gimnasios, agencias de viaje, automotrices, etc.). En estos casos es posible pagar por SPEI®. Sólo se requiere que la compañía proporcione al cliente el número CLABE de la cuenta a la que se harán los pagos, el nombre del titular de esa cuenta (usualmente está a nombre de la empresa misma) y el banco en que radica la cuenta.]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement x="288" y="273" width="227" height="97" uuid="dbb93859-0ecc-4677-a2e4-e5f7d75ff6f3"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="299" y="273" width="203" height="29" uuid="0908a946-a90d-4862-a9ad-04b2dab3a128"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pagos a personas a través del SPEI®]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="299" y="302" width="203" height="56" uuid="0814efca-d774-49d7-bc0a-d1006e49a28d"/>
+				<textElement>
+					<font size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[En muchas ocasiones es posible que necesitemos hacer una transferencia de dinero o un pago a algún familiar, amigo o a cualquier otra persona. A fin de evitar los inconvenientes de hacer ese pago en efectivo y de trasladarse para entregar el dinero a la otra persona, es recomendable usar el SPEI®. Con el SPEI® las personas pueden efectuar estos pagos en cuestión de segundos, de manera segura y cómoda, sin importar si las cuentas están en bancos diferentes y sin importar el monto del pago. Sólo se requiere conocer el número CLABE o el número de tarjeta de débito vigente asociados a la cuenta de la persona que espera recibir el pago, el nombre de esa persona y el nombre del banco en que radica su cuenta. Pronto se podrá utilizar también el número de un teléfono celular que esté asociado a la cuenta de la persona que recibirá los recursos.]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement x="34" y="381" width="227" height="120" uuid="37dcbfdf-bd11-4fd2-ba52-dd0dd6a3b995"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="77" y="381" width="139" height="15" uuid="f8630cd6-87b3-4c02-ad0d-690d8828c2e1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[¿Qué es  la cuenta CLABE?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="413" width="203" height="86" uuid="b1afacdc-1472-452e-a67c-cb74ca4fd8f2"/>
+				<textElement>
+					<font size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[La CLABE (Clave Bancaria Estandarizada) es una norma bancaria para la numeración de las cuentas bancarias en México.
+
+Estructura.
+
+3 dígitos: Código de Banco.
+3 dígitos: Código de Entidad.
+3 dígitos: Código de Sucursal.
+7 dígitos: Código de Cuentahabiente.
+1 dígito: Código de Producto.
+1 dígito: Número verificador.
+]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement x="288" y="381" width="227" height="120" uuid="f7e5170a-859f-48af-924d-dc6bc422cffb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="315" y="381" width="171" height="15" uuid="816f4655-858e-4c55-8466-f812d192a511"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[¿Puedo recibir pagos de Estados Unidos?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="299" y="415" width="203" height="86" uuid="b789657c-86a3-4169-a302-34766127b0f7"/>
+				<textElement textAlignment="Justified">
+					<font size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Si se puede recibir pagos desde los Estados Unidos, para más información se puede verificar en la siguiente dirección.
+
+http://www.directoamexico.com/
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="116" y="30" width="176" height="20" uuid="fdde193e-0996-4ff1-a97f-377d12c5d244"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_nombre_cuentahabiente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="116" y="50" width="176" height="20" uuid="2f4548d3-b289-4135-9cc2-a8551bdc3025"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_rfc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="116" y="70" width="176" height="20" uuid="a114ccfb-de56-4593-8694-c90f2e0b6d59"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_numero_cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="116" y="90" width="176" height="20" uuid="4c9b36d3-f5c6-4ddb-bb5c-37cb6c3890ad"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_sucursal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="382" y="30" width="133" height="20" uuid="36503f1a-bedc-44a6-80e6-357faa2dce80"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_cuenta_CLABE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="382" y="50" width="133" height="20" uuid="2102ed58-25d9-4777-9043-e59aa0c419d9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_tipo_cuenta}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="308" y="70" width="73" height="20" uuid="8c063c47-7b6c-403e-a2e8-78e3c3af17e5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Solicitud:]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="382" y="70" width="100" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="5e1e029c-7891-4917-9b0d-e438b974bb2f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="SansSerif" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="189" y="549" width="177" height="1" uuid="705b08a2-1e06-4802-b248-efbc5c98ef5d"/>
+			</line>
+			<staticText>
+				<reportElement x="208" y="550" width="139" height="15" uuid="0a32aab8-a2f7-4ebf-849e-0dc9875e86c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Firma de conformidad ]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

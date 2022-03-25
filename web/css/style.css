@@ -1,0 +1,397 @@
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    min-height: 500px;
+    padding-top: 250px;
+}
+
+#logout{
+    float: right;
+    margin: 15px 10px 10px;
+    color: #B5B135;
+}
+
+h3 {
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+.message {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.grid {
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.listaBen{
+    width: 50%;
+    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.formBen{
+
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.grid .remove {
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+    color: #a94442;
+}
+
+.gridStyle {
+    border: 1px solid rgb(212, 212, 212);
+    height: 335px;
+}
+
+.form {
+    width: 25%;
+    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+}
+.imgSucursal{
+    width:210px;
+    height:80px; 
+}
+
+.form label {
+    width: 100px;
+}
+
+.form input {
+    width: 200px;
+    float: right;
+}
+
+.form .form-group span {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #5cb85c;
+}
+
+.form .form-group p {
+    margin-top: 15px;
+    margin-left: 200px;
+    color: #a94442;
+}
+
+.form .avatar {
+    height: 250px;
+    float: right;
+    margin-right: 25px;
+}
+
+.form .buttons {
+    clear: both;
+    float: right;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+.establa thead{
+    background-color: #D4D3D3;
+}
+
+.titulos{color:#449d44;
+
+         font-family:cursive;}
+
+
+.estado b{
+    color: #B56C1A;
+
+}
+.estados{
+    color: #763441;
+}
+#cabecera ul li a {
+    color: #FFFFFF;
+}
+
+#cabecera ul li a:hover {
+    background-color: #54C8F5;
+
+}
+
+#cabecera ul li a:focus {
+    background-color: #285C76;
+}
+
+#cabecera2{
+    background-color: #245269;
+}
+
+.nombre{
+    color:#d9edf7;
+}
+.cuentahabienteVista .form{
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+}
+.cuentahabienteVista .form label {
+    width: 100px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.cuentahabienteVista .form input {
+    width: 350px;
+    float: left;
+}
+
+.cuentahabienteVista .form input {
+    width: 300px;
+    float: left;
+}
+
+.cuentahabienteVista .form .form-group span {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #5cb85c;
+}
+
+.cuentahabienteVista .form .form-group p {
+    margin-top: 15px;
+    margin-left: 200px;
+    color: #a94442;
+}
+
+.cuentahabienteVista .form .avatar {
+    height: 250px;
+    float: right;
+    margin-right: 25px;
+}
+
+.cuentahabienteVista .form .buttons {
+    clear: both;
+    float: right;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+.cuentahabienteLista{
+    float: right;
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+.buttons .acciones{
+    float: right;
+    margin-bottom: 10px;
+
+}
+/*.emergente{
+    width: 120px; 
+}*/
+.emergente{
+    width: 75%;
+}
+.formOrden {
+
+    text-align: center;
+}
+
+.formOrden label {
+    width: auto;
+}
+
+.formOrden input {
+    width: 200px;
+    float: right;
+}
+
+.formOrden .form-group span {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #5cb85c;
+}
+
+.formOrden .form-group p {
+    margin-top: 15px;
+    margin-left: 200px;
+    color: #a94442;
+}
+
+.formOrden .avatar {
+    height: 250px;
+    float: right;
+    margin-right: 25px;
+}
+
+.formOrden .buttons {
+    clear: both;
+    float: top;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+
+.listaBene{
+    width: 50%;
+    float: right;
+    /*    margin-left: 5%;
+        margin-right: 5%;*/
+}
+
+
+
+.formBene {
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+.formBene label {
+    width: 80px;
+}
+
+.formBene input {
+    width: 180px;
+    float: left;
+}
+
+.formBene .form-group span {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #5cb85c;
+}
+
+.formBene .form-group p {
+    margin-top: 15px;
+    margin-left: 200px;
+    color: #a94442;
+}
+
+.formBene .avatar {
+    height: 250px;
+    float: right;
+    margin-right: 25px;
+}
+
+.formBene .buttons {
+    clear: both;
+    float: right;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+.tituloPantalla {
+    background: #7595B5;
+    color: snow;
+    font-family: monospace;
+    padding: 10px;
+}
+
+.panelPantalla{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /*    background: #DDF0E2;*/
+    border: 1px solid #7595B5;
+
+}
+
+.etiquetaImportante{
+    color: #BE3834;
+    padding: 5px;
+    text-align: right;
+}
+.rastreo{
+    padding: 10px;
+    float: right;
+}
+
+.rastreo input[type="text"] {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #BE3834;
+    margin-right: 10px;
+}
+
+.subtituloPantalla {
+    background: #A8B535;
+    color: snow;
+    font-family: monospace;
+    padding: 10px;
+}
+
+.subpanelPantalla{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /*    background: #DDF0E2;*/
+    border: 1px solid #A8B535;
+
+}
+
+.botonAgregar{
+    float: top;
+    color: #BE3834;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: red;
+    cursor: inherit;
+    display: block;
+}
+input[readonly] {
+    background-color: white !important;
+    cursor: text !important;
+}
+
+td.details-control {
+    background: url('../imagenes/iconos/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../imagenes/iconos/Details_close.png') no-repeat center center;
+}
+table.dataTable.select tbody tr,
+table.dataTable thead th:first-child {
+    cursor: pointer;
+}
